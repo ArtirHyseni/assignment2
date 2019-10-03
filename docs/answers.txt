@@ -1,1 +1,50 @@
 
+a)
+ Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 977 bytes | 977.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ArtirHyseni/assignment2.git
+   9df42bc..7c0d172  master -> master
+
+b) 
+command: git shortlog -s -n
+    	 7  Esteban Parra
+    	 7  artirh
+total commits so far = 14
+
+c)
+
+d) Mention two reasons whybranches are used in a Git repository?
+1. They help isolate the development activities among the team (eg. branches for new features vs branches for bug fixes).
+2. Better support for developers working in parallel.
+
+e) What is the difference between git log and git status?
+Git log gets the info about last commits and on the other side git status command displays the state of the working directory. It shows which changes have been staged and which have not. 
+
+f) What command would you use to see the commits where “Vehicle.h” was one of the committed files? 
+
+
+g) What command would you use to see the commits whose commit message contains the word “file”?
+command:  gitlog --grep="file"
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? 
+Inheritance: A lot of the classes that we create have a lot of similarities between them. The same goes towards objects where a lot of them are very similar to the point that they share certain information and behavior. When this is the case, we can take advantage of the technique known as Inheritance where we have the common features implemented in the base class and the the derived classes are able to share those common features. 
+
+Polymorphism: Polymorphism is when different objects can be accessed through the same interface. This interface will hold shared methods where every time an object calls the interface it will be able to detect and provide the implementation for that specific object even though multiple objects with different behaviors are sharing that interface. 
+
+Encapsulation: Encapsulation is another OOP concept that gives the programmer the ability to hide certain information that does not want to be seen from the outside. You can bundle this information with methods that read and write and by doing this the programmer is able to hide specific informations and control the internal state of the object. 
+
+(i) What is the main difference between the “Dictator and Lieutenants”workflowand the “Integration manager”workflow? 
+In the integration Manager workflow each developer has their own public repository where they can push any commits. After the push is done to each public repository, they are merged into the integration manager where the conflict resolution is performed and then pushed to the blessed repository. After the commits are pushed to the blessed repository, that is where the developers are able to pull their commits. 
+
+Differently in the Dictator and Lieutenants Workflow, each group of developers are assigned a lietenant where they push their commits. The lieutenants merge the changes and solve the conflicts of the developers of their group and push it to the Dictator repository where all the lieutenants are merged together and solved for any arising conflict and then pushed to the main repository called Central/Blessed repository. The developers are able to pull from the Central/Blessed repository. 
+
+The difference between these two workflows is that the Manager workflow has one integration manager that merges everything together and pushes it to the blessed repository whereas in the Dictator and Lieutenants Workflow, there are many lieutenants that merge different groups of developers. This method can also be more efficient when working with larger teams. 
+
+(j) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
+
+If 100 developers are using the Centralized workflow it would be almost impossible to concurrently work on a  project and not have conflicts between each other. However, using the Dictator and Lieutenants workflow, the Lieutenants would group developers into smaller groups and resolve the conflicts and then push them for the final resolve of conflict to the dictator. All the developers would benefit from this workflow because they would not have to waste all their time trying to solve their conflicts by themselves but they would let the lieutenants and the dictator take care of the conflicts for them. 
