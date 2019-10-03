@@ -1,5 +1,6 @@
 // create by Artir Hyseni 10/03/19
-
+#include <ctime>
+#include <cstdlib>
 #include "Jet.hpp"
 
 Jet::Jet()
