@@ -1,8 +1,8 @@
 // create by Artir Hyseni 10/03/19
 #include <ctime>
 #include <cstdlib>
-#include "Jet.hpp"
-
+#include "Jet.h"
+#include <math.h>
 Jet::Jet()
 {
     numberOfEngines = 1;
@@ -41,7 +41,7 @@ double Jet::mileageEstimate(double time1)
     {
         mileage += mileage * .055;
     }
-    return mileage;
+    return floor(mileage);
 }
 
 string Jet::toString() {

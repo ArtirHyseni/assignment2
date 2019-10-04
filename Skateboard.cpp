@@ -2,7 +2,7 @@
 #include "Skateboard.h"
 #include <ctime>
 #include <cstdlib>
-
+#include <cmath>
 Skateboard::Skateboard(string brand, string model) {
     setBrand(brand);
     setModel(model);
@@ -22,7 +22,7 @@ double Skateboard::mileageEstimate(double time1) {
         n = rand() % tempt + 1;
         mileage += mileage * n;
     }
-    return mileage;
+    return floor(mileage);
 }
 
 string Skateboard::toString() {
